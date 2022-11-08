@@ -1,0 +1,1 @@
+define(["HTMLSnippet/widget/HTMLSnippet", "HTMLSnippet/widget/HTMLSnippetContext"], {});

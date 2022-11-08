@@ -1,0 +1,8 @@
+Buildfile: C:\Users\harshitar\Documents\Mendix\LETS TRAVEL-main\deployment\build_core.xml
+
+clean-custom-classes:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

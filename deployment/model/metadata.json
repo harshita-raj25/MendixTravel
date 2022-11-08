@@ -1,0 +1,324 @@
+{
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RuntimeVersion": "9.18.0.53394",
+  "ProjectID": "704946fc-987e-4d9f-8288-8bb0a8ef7657",
+  "ProjectName": "LETS TRAVEL",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567"
+      ]
+    },
+    "db969797-37bf-4b38-b961-d70a27d65e81": {
+      "Name": "Anonymous"
+    },
+    "3c59d314-6fbf-4c66-88b4-9714c50547c1": {
+      "Name": "Tourist",
+      "ManageableRoles": [
+        "3c59d314-6fbf-4c66-88b4-9714c50547c1"
+      ]
+    },
+    "9af5e972-6741-4e28-87f6-487f5d4cec33": {
+      "Name": "Guide",
+      "ManageableRoles": [
+        "9af5e972-6741-4e28-87f6-487f5d4cec33"
+      ]
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "Administration.EnableMendixSSOUserMigration",
+      "Type": "Boolean",
+      "Description": "If enabled (default: false), the migration microflow 'MendixSSO_MigrateUsersToAccount' is executed after start-up. This constant is used and set by Mendix Studio to perform automatic migration when necessary.\r\n\r\nDo not enable this constant manually. For projects using Mendix Studio Pro, make sure to read the instructions in the microflow carefully. If migration is required, execute the migration microflow manually.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "EmailTemplate.azure_emailServerHostURL",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "smtp.office365.com"
+    },
+    {
+      "Name": "EmailTemplate.EmailAddressSeparator",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ","
+    },
+    {
+      "Name": "EmailTemplate.EmailLogRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve error messages.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "EmailTemplate.EmailRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve emails which were sent.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "EmailTemplate.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "Email"
+    },
+    {
+      "Name": "EmailTemplate.SendingEnabled",
+      "Type": "Boolean",
+      "Description": "Sending emails is enabled by default. \r\nWhen setting this value to false emails won't be send. This is useful on test environments for example.",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "Encryption.EncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to encrypt and decrypt values.\r\nThe length of this key must be 32 characters.",
+      "DefaultValue": "12345678912345678912345678912345"
+    },
+    {
+      "Name": "Encryption.EncryptionPrefix",
+      "Type": "String",
+      "Description": "Prefix for stored encrypted values.\r\nThis value is used to determine whether the value has been already encrypted.\r\nThe prefix must be either {AES}, {AES2} or {AES3}.\r\nEncryption is only supported if the prefix is {AES3}.\r\nIt is not recommended to change this value.",
+      "DefaultValue": "{AES3}"
+    },
+    {
+      "Name": "Encryption.LegacyEncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to decrypt values that are encrypted with legacy algorithms.\r\nThe length of this key must be 16 characters.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Encryption.LogNode",
+      "Type": "String",
+      "Description": "Node which appears in log messages for this module.",
+      "DefaultValue": "Encryption"
+    },
+    {
+      "Name": "ExcelImporter.EnableExternalEntities",
+      "Type": "Boolean",
+      "Description": "Enables the parsing of external entities from the DTD. This is turned off by default.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "ExcelImporter.ParseEmptyCells",
+      "Type": "Boolean",
+      "Description": "Set this constant to True to allow parsing empty cells with microflow when importing Excel files.\r\n\r\nIf True, \"parse with\" microflow will be called for empty cells.\r\nIf False (default), the microflow will be called only for cells with data.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "MendixSSO.AuthRequestExpiryDurationInMinutes",
+      "Type": "Integer",
+      "Description": "",
+      "DefaultValue": "60"
+    },
+    {
+      "Name": "MendixSSO.BatchSize",
+      "Type": "Integer",
+      "Description": "",
+      "DefaultValue": "10000"
+    },
+    {
+      "Name": "MendixSSO.ConsentToDeleteIncompatibleUsers",
+      "Type": "Boolean",
+      "Description": "When your application contains SSO user objects based on a previous user entity and no customized user data has to be retained, you can choose to enable automatic deletion of the old user object  and provisioning of the new user object when that user logs in. Setting the default value of this constant to true will enable this.\r\n(Also read MendixSSO documentation, section \"Incompatible user data type\")\r\n\r\nNote: keep in mind that all your defined delete behaviors will trigger as well.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "MendixSSO.EncryptionPrefix",
+      "Type": "String",
+      "Description": "Prefix for stored encrypted values.\r\nThis value is used to determine whether the value has been already encrypted.",
+      "DefaultValue": "{AES2}"
+    },
+    {
+      "Name": "MendixSSO.EnvironmentPassword",
+      "Type": "String",
+      "Description": "This is the password which is used to communicate with the Mendix SSO Provider. This password will be set automatically on deployment in the Mendix Cloud. ",
+      "DefaultValue": "<Password will be generated by the Mendix Cloud>"
+    },
+    {
+      "Name": "MendixSSO.EnvironmentUUID",
+      "Type": "String",
+      "Description": "This is the environment UUID which is used to communicate with the Mendix SSO Provider to identify this application. This UUID will be set automatically on deployment in the Mendix Cloud. ",
+      "DefaultValue": "<EnvironmentUUID will be generated by the Mendix Cloud>"
+    },
+    {
+      "Name": "MendixSSO.IndexPage",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "/index.html"
+    },
+    {
+      "Name": "MendixSSO.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "MendixSSO"
+    },
+    {
+      "Name": "MendixSSO.OpenIdConnectDiscoveryPath",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ".well-known/openid-configuration"
+    },
+    {
+      "Name": "MendixSSO.OpenIdConnectProvider",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "https://sso.mendix.com"
+    },
+    {
+      "Name": "MendixSSO.OpenIdConnectScopes",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "openid mx:user:profile:v1:read offline_access"
+    },
+    {
+      "Name": "MendixSSO.RolesLocation",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "https://roles.mendix.com"
+    },
+    {
+      "Name": "MendixSSO.SignupHint",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "MendixSSO.SilentAuthentication",
+      "Type": "Boolean",
+      "Description": "",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "MendixSSO.SSOEnabled",
+      "Type": "Boolean",
+      "Description": "Indicates whether MendixSSO will be enabled on startup, allowing app users to login with their Mendix account. The default value of this constant is 'false' for local deployments, as MendixSSO is a cloud product.\r\nThe value will be automatically set to 'true' during deployment in the Mendix Cloud. \r\n\r\nWhen enabled, Single Sign On will be initiated by navigating to \"<App URL>/openid/login\" or clicking the 'Mendix Account' button on the login page.",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "MendixSSO.SupportEmail",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "support@mendix.com"
+    },
+    {
+      "Name": "MendixSSO.SupportEmailSubject",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "SSO Error"
+    },
+    {
+      "Name": "MendixSSO.TokenEncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to encrypt and decrypt tokens.\r\nThe length of this key must be exactly 16 characters.\r\n\r\nFor local deployment change this value to some random 16 character string.",
+      "DefaultValue": "<TokenEncryptionKey will be generated by the Mendix Cloud>"
+    },
+    {
+      "Name": "MendixSSO.TokenExpiryInSeconds",
+      "Type": "Integer",
+      "Description": "30 days = 30 * 24 * 60*60 seonds\r\n\r\n2592000",
+      "DefaultValue": "2592000"
+    },
+    {
+      "Name": "MendixSSO.TokenValidatorMaxClockSkew",
+      "Type": "Integer",
+      "Description": "",
+      "DefaultValue": "60"
+    },
+    {
+      "Name": "MendixSSO.TryAgainText",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "Home"
+    },
+    {
+      "Name": "MendixSSO.Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "3.0.0"
+    },
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "2.1.0"
+    },
+    {
+      "Name": "WebActions.WebActions_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "2.4.0"
+    }
+  ],
+  "ScheduledEvents": [
+    {
+      "Name": "EmailTemplate.Cleanup",
+      "Description": ""
+    },
+    {
+      "Name": "EmailTemplate.SendQueuedEmails",
+      "Description": ""
+    },
+    {
+      "Name": "MendixSSO.DeleteExpiredAuthRequests",
+      "Description": ""
+    },
+    {
+      "Name": "MendixSSO.DeleteExpiredTokens",
+      "Description": ""
+    }
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/mendixsso-api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/rest-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    }
+  ]
+}

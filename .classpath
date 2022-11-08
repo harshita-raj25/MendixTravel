@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="javasource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/com.mendix.json.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/com.mendix.logging-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/com.mendix.m2ee-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/com.mendix.public-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/javax.servlet-api.servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.18.0.53394/runtime/bundles/javax.websocket-api.websocket.jar"/>
+	<classpathentry kind="lib" path="userlib/accessors-smart-2.4.7.jar"/>
+	<classpathentry kind="lib" path="userlib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="userlib/asm-9.1.jar"/>
+	<classpathentry kind="lib" path="userlib/bcpg-jdk15on-1.69.jar"/>
+	<classpathentry kind="lib" path="userlib/bcpkix-jdk15on-1.69.jar"/>
+	<classpathentry kind="lib" path="userlib/bcprov-jdk15on-1.69.jar"/>
+	<classpathentry kind="lib" path="userlib/bcutil-jdk15on-1.69.jar"/>
+	<classpathentry kind="lib" path="userlib/com.github.virtuald.curvesapi-1.07.jar"/>
+	<classpathentry kind="lib" path="userlib/com.springsource.javax.activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="userlib/com.zaxxer.SparseBitSet-1.2.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-codec-1.14.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-codec.commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-email-1.5.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-io-2.8.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-io.commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-lang3-3.11.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-text-1.9.jar"/>
+	<classpathentry kind="lib" path="userlib/content-type-2.1.jar"/>
+	<classpathentry kind="lib" path="userlib/httpclient-4.5.13.jar"/>
+	<classpathentry kind="lib" path="userlib/httpcore-4.4.13.jar"/>
+	<classpathentry kind="lib" path="userlib/javax.mail-1.6.0.jar"/>
+	<classpathentry kind="lib" path="userlib/jcip-annotations-1.0-1.jar"/>
+	<classpathentry kind="lib" path="userlib/json-smart-2.4.7.jar"/>
+	<classpathentry kind="lib" path="userlib/lang-tag-1.5.jar"/>
+	<classpathentry kind="lib" path="userlib/nimbus-jose-jwt-9.12.1.jar"/>
+	<classpathentry kind="lib" path="userlib/oauth2-oidc-sdk-9.15.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.commons.commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.commons.commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.commons.commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.logging.log4j.log4j-api-2.17.2.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.poi.poi-5.2.2.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.poi.poi-ooxml-5.2.2.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.poi.poi-ooxml-lite-5.2.2.jar"/>
+	<classpathentry kind="lib" path="userlib/org.apache.xmlbeans.xmlbeans-5.0.3.jar"/>
+	<classpathentry kind="lib" path="userlib/replication.jar"/>
+	<classpathentry kind="output" path="deployment/run/bin"/>
+</classpath>
